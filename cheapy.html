@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		challange
+	</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="project.css">
+
+</head>
+<body>
+	<section class="container">
+		<h2 class="header-section">Women</h2>
+	<div class= "shop-items">
+		<div class="shop-item">
+			<div class="shop-item-title">
+				<strong>
+					Dresse-1
+				</strong>
+			</div>
+			<img class="shop-item-image "src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gIy3BJS--rwmSJsAfrullYD7KuXlhK4VJcJuxKasmHdmdYHy&s">
+			<div class="shop-item-details">
+				<span class="shop-item-price">60$</span>
+				<button id="btndresse-1"class="btn" onclick = "incriment('dresse-1','section_dresse-1')">Add Item</button>
+				
+			</div>
+		</div>
+	
+		
+		<div class="shop-item">
+			<div class="shop-item-title">
+				<strong >
+					Dresse-2
+				</strong>
+			</div>
+			<img  class="shop-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUO9pELd7ALU2z5LETh15hk2BB3U829gpvLUkm7wVnenNYxBb&s">
+			<div class="shop-item-details">
+				<span class="shop-item-price">30$</span>
+				<button class="btn" onclick = "incriment('dresse-2' ,'section_dresse-2')">Add Item</button>
+				
+			</div>
+		</div>
+	</div>
+
+	</section>
+
+		<section class="container">
+		<h2 class="header-section">MEN</h2>
+	<div class= "shop-items">
+		<div class="shop-item">
+			<div class="shop-item-title">
+				<strong>
+					Suit-1
+				</strong>
+			</div>
+			<img class="shop-item-image "src="https://imagescdn.simons.ca/images/2945-14178-1-A1_2/4-season-wool-suit-london-fit-semi-slim.jpg?__=63">
+			<div class="shop-item-details">
+				<span class="shop-item-price">90$</span>
+				<button id="btnsuit-1"class="btn" onclick = "incriment('suit-1','section_suit-1')">Add Item</button>
+				
+			</div>
+		</div>
+	
+		
+		<div class="shop-item">
+			<div class="shop-item-title">
+				<strong >
+					Suit-2
+				</strong>
+			</div>
+			<img  class="shop-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuf_qQOziP9dT06Qj-7OdhoyYDzKt7jP5itW5yNYKZydp5hBf9&s">
+			<div class="shop-item-details">
+				<span class="shop-item-price">80$</span>
+				<button class="btn" onclick = "incriment('suit-2' ,'section_suit-2')">Add Item</button>
+				
+			</div>
+		</div>
+	</div>
+
+	</section>
+
+	<section class="container">
+		<h1 class="header-section"> cart</h1>
+		<div class="cart-row">
+			<span class="cart-item cart-header cart-column">item</span>
+			<span class="cart-price cart-header cart-column">price</span>
+			<span class="cart-quantity cart-header cart-column">quantity </span>
+			
+		</div>
+
+		<div id="section_dresse-2"  class="cart-row">
+			<div class="cart-item cart-column">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUO9pELd7ALU2z5LETh15hk2BB3U829gpvLUkm7wVnenNYxBb&s" width="100" height="100">
+				<span class="cart-item-title">dresse-2</span>
+		    </div>		
+		
+			<span class="cart-price cart-column">30 $</span>
+			<input id="dresse-2"class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<button id="remove_dresse-2" onclick="remove('section_dresse-2' ,'dresse-2' ,30)">Remove</button>
+
+		</div>
+	
+		
+		<div id="section_dresse-1" class="cart-row ">
+		   <div class= "cart-item cart-column">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gIy3BJS--rwmSJsAfrullYD7KuXlhK4VJcJuxKasmHdmdYHy&s" width="100" height="100">
+			<span class="cart-item-title">dresse-1</span>
+		  </div>
+			<span id="price_item" class="cart-price cart-column" >60 $</span>
+			<input id="dresse-1" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<button id="remove_dresse-1" onclick="remove('section_dresse-1' ,'dresse-1' ,60)">Remove</button>
+
+		</div>
+
+
+		<div id="section_suit-1" class="cart-row ">
+		   <div class= "cart-item cart-column">
+			<img src="https://imagescdn.simons.ca/images/2945-14178-1-A1_2/4-season-wool-suit-london-fit-semi-slim.jpg?__=63" width="100" height="100">
+			<span class="cart-item-title">suit-1</span>
+		  </div>
+			<span id="price_item" class="cart-price cart-column" >90 $</span>
+			<input id="suit-1" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<button id="remove_suit-1" onclick="remove('section_suit-1' ,'suit-1' ,90)">Remove</button>
+
+		</div>
+		
+		<div id="section_suit-2" class="cart-row ">
+		   <div class= "cart-item cart-column">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuf_qQOziP9dT06Qj-7OdhoyYDzKt7jP5itW5yNYKZydp5hBf9&s" width="100" height="100">
+			<span class="cart-item-title">suit-2</span>
+		  </div>
+			<span id="price_item" class="cart-price cart-column" >80 $</span>
+			<input id="suit-2" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<button id="remove_suit-2" onclick="remove('section_suit-2' ,'suit-2' ,80)">Remove</button>
+
+		</div>
+		<hr>
+		<div>
+			<strong> Total</strong>
+			<span id='total' value="0">0$ </span>
+		</div>
+		<div>
+			<button> Purshase</button>
+		</div>
+
+	</section>
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+	<script type="text/javascript" src="project.js"></script>
+
+	
+		
+   
+	</script>
+</body>
+</html
