@@ -19,8 +19,7 @@ var total_prix =0 ;
 				
 	function total_price(){
 
-		priceitem=Number($().text().replace('$', ""))
-		console.log((priceitem))
+		
 		 total_prix =( document.getElementById("dresse-2").value*30) + ( document.getElementById("dresse-1").value*60)+ ( document.getElementById("suit-1").value*90)+ ( document.getElementById("suit-2").value*80);
 		$("#total").html(total_prix);
  
