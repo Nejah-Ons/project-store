@@ -152,110 +152,125 @@
 	<section class="container">
 		<h1 class="header-section"> cart</h1>
 		<div class="cart-row">
-			<span class="cart-item cart-header ">item</span>
-			<span class="cart-price cart-header ">price</span>
-			<span class="cart-quantity cart-header ">quantity </span>
+			<span class="cart-item cart-header cart-column">item</span>
+			<span class="cart-price cart-header cart-column">price</span>
+			<span class="cart-quantity cart-header cart-column">quantity </span>
 			
 		</div>
 
 		<div id="section_dresse-2"  class="cart-row">
 			<div class="cart-item cart-column">
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUO9pELd7ALU2z5LETh15hk2BB3U829gpvLUkm7wVnenNYxBb&s" width="100" height="100">
+				<img class='cart-item-img'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUO9pELd7ALU2z5LETh15hk2BB3U829gpvLUkm7wVnenNYxBb&s" width="100" height="100">
 				<span class="cart-item-title">dresse-2</span>
 		    </div>		
 		
 			<span class="cart-price cart-column">30 $</span>
-			<input id="dresse-2"class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
-			<button class="danger"id="remove_dresse-2" onclick="remove('section_dresse-2' ,'dresse-2' ,30)">Remove</button>
+			<div class="cart-quantity cart-column">
+			<input  class="cart-quantity-input" id="dresse-2" type="number" value="0" min="0" onchange="total_price()">
+			<button class="danger" id="remove_dresse-2" onclick="remove('section_dresse-2' ,'dresse-2' ,30)">Remove</button>
 
 		</div>
+	</div>
 	
 		
 		<div id="section_dresse-1" class="cart-row ">
 		   <div class= "cart-item cart-column">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gIy3BJS--rwmSJsAfrullYD7KuXlhK4VJcJuxKasmHdmdYHy&s" width="100" height="100">
+			<img class="cart-item-img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gIy3BJS--rwmSJsAfrullYD7KuXlhK4VJcJuxKasmHdmdYHy&s" width="100" height="100">
 			<span class="cart-item-title">dresse-1</span>
 		  </div>
 			<span id="price_item" class="cart-price cart-column" >60 $</span>
-			<input id="dresse-1" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<div class="cart-quantity cart-column">
+			<input id="dresse-1" class="cart-quantity-input " type="number" value="0" min="0" onchange="total_price()">
 			<button class="danger" id="remove_dresse-1" onclick="remove('section_dresse-1' ,'dresse-1' ,60)">Remove</button>
 
+		</div>
 		</div>
 
 
 		<div id="section_dresse-3" class="cart-row ">
 		   <div class= "cart-item cart-column">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gIy3BJS--rwmSJsAfrullYD7KuXlhK4VJcJuxKasmHdmdYHy&s" width="100" height="100">
+			<img class="cart-item-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gIy3BJS--rwmSJsAfrullYD7KuXlhK4VJcJuxKasmHdmdYHy&s" width="100" height="100">
 			<span class="cart-item-title">dresse-3</span>
 		  </div>
 			<span id="price_item" class="cart-price cart-column" >70 $</span>
-			<input id="dresse-3" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<div class="cart-quantity cart-column">
+			<input id="dresse-3" class="cart-quantity-input" type="number" value="0" min="0" onchange="total_price()">
 			<button class="danger" id="remove_dresse-3" onclick="remove('section_dresse-3' ,'dresse-3' ,70)">Remove</button>
-
+        </div>
 		</div>
 
 		<div id="section_dresse-4" class="cart-row ">
 		   <div class= "cart-item cart-column">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmD3mLiuxJ35N3HLqgDEE9Fpyc9f26ZHI4EBa9OGg--V_yEBi&s" width="100" height="100">
+			<img class="cart-item-img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmD3mLiuxJ35N3HLqgDEE9Fpyc9f26ZHI4EBa9OGg--V_yEBi&s" width="100" height="100">
 			<span class="cart-item-title">dresse-4</span>
 		  </div>
 			<span id="price_item" class="cart-price cart-column" >65 $</span>
-			<input id="dresse-4" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<div class="cart-quantity cart-column">
+			<input id="dresse-4" class="cart-quantity-input" type="number" value="0" min="0" onchange="total_price()">
 			<button class="danger" id="remove_dresse-4" onclick="remove('section_dresse-4' ,'dresse-4' ,65)">Remove</button>
 
 		</div>
+	</div>
 
 
 		<div id="section_suit-1" class="cart-row ">
 		   <div class= "cart-item cart-column">
-			<img src="https://imagescdn.simons.ca/images/2945-14178-1-A1_2/4-season-wool-suit-london-fit-semi-slim.jpg?__=63" width="100" height="100">
+			<img class="cart-item-img" src="https://imagescdn.simons.ca/images/2945-14178-1-A1_2/4-season-wool-suit-london-fit-semi-slim.jpg?__=63" width="100" height="100">
 			<span class="cart-item-title">suit-1</span>
 		  </div>
 			<span id="price_item" class="cart-price cart-column" >90 $</span>
-			<input id="suit-1" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<div class="cart-quantity cart-column">
+			<input id="suit-1" class="cart-quantity-input" type="number" value="0" min="0" onchange="total_price()">
 			<button class="danger" id="remove_suit-1" onclick="remove('section_suit-1' ,'suit-1' ,90)">Remove</button>
 
 		</div>
+	</div>
 		
 		<div id="section_suit-2" class="cart-row ">
 		   <div class= "cart-item cart-column">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuf_qQOziP9dT06Qj-7OdhoyYDzKt7jP5itW5yNYKZydp5hBf9&s" width="100" height="100">
+			<img class="cart-item-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuf_qQOziP9dT06Qj-7OdhoyYDzKt7jP5itW5yNYKZydp5hBf9&s" width="100" height="100">
 			<span class="cart-item-title">suit-2</span>
 		  </div>
 			<span id="price_item" class="cart-price cart-column" >80 $</span>
-			<input id="suit-2" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<div class="cart-quantity cart-column">
+			<input id="suit-2" class="cart-quantity-input" type="number" value="0" min="0" onchange="total_price()">
 			<button class="danger" id="remove_suit-2" onclick="remove('section_suit-2' ,'suit-2' ,80)">Remove</button>
 
 		</div>
+	</div>
 
 		<div id="section_suit-3" class="cart-row ">
 		   <div class= "cart-item cart-column">
-			<img src="https://i.pinimg.com/originals/b7/15/70/b71570a10ced456426bb2ce3b197b124.jpg" width="100" height="100">
+			<img class="cart-item-img" src="https://i.pinimg.com/originals/b7/15/70/b71570a10ced456426bb2ce3b197b124.jpg" width="100" height="100">
 			<span class="cart-item-title">suit-3</span>
 		  </div>
 			<span id="price_item" class="cart-price cart-column" >95 $</span>
-			<input id="suit-3" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<div class="cart-quantity cart-column">
+			<input id="suit-3" class="cart-quantity-input" type="number" value="0" min="0" onchange="total_price()">
 			<button class="danger" id="remove_suit-3" onclick="remove('section_suit-3' ,'suit-3' ,95)">Remove</button>
 
 		</div>
+	</div>
 
 		<div id="section_suit-4" class="cart-row ">
 		   <div class= "cart-item cart-column">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZINybtNM4JtXx5v7LypNRqdbji2lQvD5o2RDUQhiXQz0bjoF&s" width="100" height="100">
+			<img class="cart-item-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZINybtNM4JtXx5v7LypNRqdbji2lQvD5o2RDUQhiXQz0bjoF&s" width="100" height="100">
 			<span class="cart-item-title">suit-4</span>
 		  </div>
 			<span id="price_item" class="cart-price cart-column" >85 $</span>
-			<input id="suit-4" class="cart-quantity cart-column" type="number" value="0" min="0" onchange="total_price()">
+			<div class="cart-quantity cart-column">
+			<input id="suit-4" class="cart-quantity-input" type="number" value="0" min="0" onchange="total_price()">
 			<button class="danger" id="remove_suit-4" onclick="remove('section_suit-4' ,'suit-4' ,85)">Remove</button>
 
 		</div>
+	</div>
 		<hr>
-		<div>
-			<strong class="total"> Total</strong>
+		<div class="cart-total">
+			<strong class="cart-total-title"> Total</strong>
 			<span class="pp" id='total' value="0">0$ </span>
 		</div>
 		<div>
-			<button id="#purshase"> Purshase</button>
+			<button id="purshase"> Purshase</button>
 		</div>
 
 	</section>

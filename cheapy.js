@@ -17,6 +17,10 @@ var total_prix =0 ;
 
 			}
 
+      $('#purshase').on("click", function(){
+        alert("Thank you for your visit ")
+      })
+
 
 			
 				
@@ -29,12 +33,14 @@ var total_prix =0 ;
 		$("#total").html(total_prix);
  
 	}
+
+
 	$(document).ready(function(){
 
     $("#section_dresse-1").hide();
     $("#section_dresse-2").hide();
-      $("#section_dresse-3").hide();
-       $("#section_dresse-4").hide();
+    $("#section_dresse-3").hide();
+    $("#section_dresse-4").hide();
     $("#section_suit-1").hide();
     $("#section_suit-2").hide();
     $("#section_suit-3").hide();

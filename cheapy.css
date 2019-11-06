@@ -3,13 +3,13 @@ body{
 	width: 80%;
 	align-items: center;
 	justify-content: center;
-	background-color: #FFF0F5;
+	background-image: url("https://img.freepik.com/vecteurs-libre/blanc-gris-forme-sans-soudure-fond_107708-55.jpg?size=626&ext=jpg");
+
 }
 
 header {
   display: flex;
-
-  align-items: center;
+align-items: center;
   padding: .5rem 3.75rem;
   background-color: #FF6347;
   height: 300px;
@@ -28,11 +28,7 @@ header {
 	
 }
 
-.container {
-	margin-top: 150px;
-	align-items: center;
-    margin-left:300px;
-}
+
 section{
 	display:flex;
 	margin-top:100px;
@@ -61,9 +57,9 @@ section{
 }
 .shop-item-details{
 	display:flex;
-	justify-content: space-around;
 	align-items: center;
 	padding: 5px;
+	justify-content: space-between;
 	
 }
 .shop-item-price{
@@ -76,7 +72,13 @@ section{
 	justify-content: space-around;
 }
 .btn{
-	text-align: right;
+	color:black;
+	background-color: #FFDEAD;
+	border: none;
+	font-weight: bold;
+	border-radius: 0.3em;
+	cursor: pointer;
+	
 }
 
 .cart-header{
@@ -86,63 +88,115 @@ section{
 	color: #D2691E;
 
 }
+
 .cart-column{
-	border-top:2px solid black;
-	border-bottom: 2px solid black;
 	
-	margin-bottom :10px
+	border-bottom: 1px solid black;
+	margin-right:1.5em;
+	
 	margin-top: 10px;
+	padding-bottom: 10px;
 	display: flex;
 	align-items: center;
 }
 
  .cart-row{
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 20px;
+
 }
 
 
 .cart-item{
 	width: 45%;
 }
+
+
 .cart-price{
 	width: :20%;
+	font-size: 1.2em;
 }
+
+
 .cart-quantity{
 	width: 35%;
 }
+
+
+
 .container{
 	display:flex;
-	flex-direction: column
+	flex-direction: column;
+	margin-top: 150px;
+	align-items: center;
+    margin-left:300px;
 }
+
+
 .cart-item-title{
-	margin-left: 20px;
-	font-size:15px;
+	margin-left: 0.5em;
+	font-size:1.2em;
 	color: #BC8F8F;
 
 }
+
+
+.cart-item-img{
+	width: 75px;
+	height: auto;
+	border-radius: 10px;
+}
+
+
 .danger{
-	background-color: #F0E68C;
-	height: :30px;
+	color:black;
+	background-color: #FFDEAD;
 	border: none;
-	border-right: 2px solid black;
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+	font-weight: bold;
+	border-radius: 0.3em;
 
 }
+
+
 .danger:hover{
-	background-color: red;
+	background-color: orange;
 	transition: 0.2s;
 }
+
+
+.cart-quantity-input{
+	height:34px;
+	width: 50px;
+	border-radius: 5px;
+	border: 1px solid #F4A460;
+	background-color: #F5FFFA;
+	text-align: center;
+	padding: 0;
+	margin-right: 25px;
+	font-size: 1.2em;
+	color: black;
+}
+
+
 .header-section{
 	font-size: 40px;
 	color: #FA8072;
 }
-.total{
-	color: #FA8072;
-	font-size: 40px;
+
+
+.cart-total{
+	margin-top: 10px;
+	margin-right: 10px;
+	text-align: right;
 }
+
+.cart-total-title{
+	color: #FA8072;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-right:20px;
+}
+
+
 .pp{
 	color: #FF4500;
 	font-size: 20px;
